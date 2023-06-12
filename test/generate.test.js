@@ -7,8 +7,8 @@ test('generate() default', (t) => {
   assert.equal(keypair.curve, 'ed25519')
   assert.equal(typeof keypair.public, 'string')
   assert.equal(typeof keypair.private, 'string')
-  assert.equal(Buffer.isBuffer(keypair._public), true)
-  assert.equal(Buffer.isBuffer(keypair._private), true)
+  assert.equal(keypair._public instanceof Uint8Array, true)
+  assert.equal(keypair._private instanceof Uint8Array, true)
   assert.deepEqual(Object.keys(keypair), [
     'curve',
     'public',
