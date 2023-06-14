@@ -1,7 +1,7 @@
 {
   "name": "ppppp-keypair",
-  "description": "Keyfile operations for PPPPP",
   "version": "0.0.1",
+  "description": "Keyfile operations for PPPPP",
   "homepage": "https://github.com/staltz/ppppp-keypair",
   "repository": {
     "type": "git",
@@ -9,6 +9,7 @@
   },
   "author": "Andre 'Staltz' Medeiros <contact@staltz.com>",
   "license": "MIT",
+  "type": "commonjs",
   "main": "lib/index.js",
   "files": [
     "lib/**/*"
