@@ -23,9 +23,9 @@
     }
   },
   "dependencies": {
-    "b4a": "^1.6.4",
-    "bs58": "^5.0.0",
-    "sodium-universal": "^4.0.0",
+    "b4a": "~1.6.4",
+    "bs58": "~5.0.0",
+    "sodium-universal": "~4.0.0",
     "mkdirp": "~3.0.1"
   },
   "devDependencies": {
