@@ -1,5 +1,6 @@
 const test = require('node:test')
 const assert = require('node:assert')
+const b4a = require('b4a')
 const Keypair = require('../lib/index')
 
 test('generate() default', (t) => {
@@ -7,8 +8,8 @@ test('generate() default', (t) => {
   assert.equal(keypair.curve, 'ed25519')
   assert.equal(typeof keypair.public, 'string')
   assert.equal(typeof keypair.private, 'string')
-  assert.equal(keypair._public instanceof Uint8Array, true)
-  assert.equal(keypair._private instanceof Uint8Array, true)
+  assert.ok(b4a.isBuffer(keypair._public), true)
+  assert.ok(b4a.isBuffer(keypair._private), true)
   assert.deepEqual(Object.keys(keypair), [
     'curve',
     'public',

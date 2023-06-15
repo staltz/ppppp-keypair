@@ -23,11 +23,13 @@
     }
   },
   "dependencies": {
+    "b4a": "^1.6.4",
     "bs58": "^5.0.0",
     "sodium-universal": "^4.0.0",
     "mkdirp": "~3.0.1"
   },
   "devDependencies": {
+    "@types/b4a": "^1.6.0",
     "@types/node": "^20.2.5",
     "c8": "^7.11.0",
     "husky": "^4.3.0",

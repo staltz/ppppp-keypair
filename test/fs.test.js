@@ -1,8 +1,8 @@
 const test = require('node:test')
 const assert = require('node:assert')
-const fs = require('fs')
-const os = require('os')
-const path = require('path')
+const fs = require('node:fs')
+const os = require('node:os')
+const path = require('node:path')
 const Keypair = require('../lib/index')
 
 const keyPath = path.join(os.tmpdir(), `ppppp-keypair-${Date.now()}`)
