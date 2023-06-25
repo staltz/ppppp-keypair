@@ -12,8 +12,10 @@
   "type": "commonjs",
   "main": "lib/index.js",
   "files": [
-    "lib/**/*"
+    "lib/**/*",
+    "types/**/*"
   ],
+  "types": "types/index.d.ts",
   "engines": {
     "node": ">=16"
   },
@@ -38,7 +40,7 @@
     "typescript": "^5.0.2"
   },
   "scripts": {
-    "build": "rm -f lib/**/*.d.ts && tsc",
+    "build": "tsc",
     "test": "node --test",
     "format-code": "prettier --write \"*.js\" \"(test|lib)/*.js\"",
     "format-code-staged": "pretty-quick --staged --pattern \"*.js\" --pattern \"(test|lib)/*.js\"",
