@@ -39,7 +39,7 @@
     "typescript": "^5.0.2"
   },
   "scripts": {
-    "clean-check": "npm run --build --clean",
+    "clean-check": "tsc --build --clean",
     "prepublishOnly": "npm run clean-check && tsc --build",
     "postpublish": "npm run clean-check",
     "test": "npm run clean-check && node --test",
