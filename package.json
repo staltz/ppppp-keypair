@@ -12,7 +12,10 @@
   "type": "commonjs",
   "main": "lib/index.js",
   "files": [
-    "lib/**/*"
+    "lib/*.js",
+    "lib/*.d.ts",
+    "lib/**/*.js",
+    "lib/**/*.d.ts"
   ],
   "types": "types/index.d.ts",
   "engines": {
